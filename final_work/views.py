@@ -19,13 +19,13 @@ def index_redirect():
 def yusuf():
     return render_template("yusuf.html")
 
-# @my_view.route('/rose.html')
-# def rose():
-#     return render_template("rose.html")
+@my_view.route('/rose')
+def rose():
+    return render_template("rose.html")
 
-# @my_view.route('/zak.html')
-# def zak():
-#     return render_template("zak.html")
+@my_view.route('/zak')
+def zak():
+    return render_template("zak.html")
 
 # @my_view.route('/contact.html')
 # def contact():
