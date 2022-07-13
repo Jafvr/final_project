@@ -7,6 +7,34 @@ my_view = Blueprint("my_view", __name__)
 def index():
     return render_template("index.html")
 
-@my_view.route('/rose.html')
-def rose():
-    return render_template("page1.html")
+
+
+@my_view.route('/javascript')
+@my_view.route('/js')
+@my_view.route('/home')
+def index_redirect():
+    return redirect(url_for("my_view.index"))
+
+# @my_view.route('/yusuf.html')
+# def yusuf():
+#     return render_template("yusuf.html")
+
+# @my_view.route('/rose.html')
+# def rose():
+#     return render_template("rose.html")
+
+# @my_view.route('/zak.html')
+# def zak():
+#     return render_template("zak.html")
+
+# @my_view.route('/contact.html')
+# def contact():
+#     return render_template("contact.html")
+
+# @my_view.route('/index.html')
+# def index():
+#     return render_template("index.html")
+
+# @my_view.route('/index.html')
+# def index():
+#     return render_template("index.html")
