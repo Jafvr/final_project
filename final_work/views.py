@@ -15,9 +15,9 @@ def index():
 def index_redirect():
     return redirect(url_for("my_view.index"))
 
-# @my_view.route('/yusuf.html')
-# def yusuf():
-#     return render_template("yusuf.html")
+@my_view.route('/yusuf')
+def yusuf():
+    return render_template("yusuf.html")
 
 # @my_view.route('/rose.html')
 # def rose():
