@@ -27,13 +27,13 @@ def rose():
 def zak():
     return render_template("zak.html")
 
-# @my_view.route('/contact.html')
-# def contact():
-#     return render_template("contact.html")
+@my_view.route('/contact')
+def contact():
+    return render_template("contact.html")
 
-# @my_view.route('/index')
-# def index():
-#     return render_template("index.html")
+@my_view.route('/aboutus')
+def aboutus():
+    return render_template("aboutus.html")
 
 # @my_view.route('/index.html')
 # def index():
