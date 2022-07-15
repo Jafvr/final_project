@@ -4,13 +4,10 @@ from flask import Flask, render_template, Blueprint, redirect, url_for
 
 
 my_view = Blueprint("my_view", __name__)
-@my_view.route('/index')
+@my_view.route('/')
 def index():
     return render_template("index.html")
 
-@my_view.route('/')
-def homepage():
-    return render_template("index.html")
 
 @my_view.route('/javascript')
 @my_view.route('/js')
